@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="typing-text">
+        <p></p>
+      </div>
+      <input
+        type="text"
+        class="input-field"
+        placeholder="Start typing here..."
+      />
+      <div class="time">
+        Time: <span><b>60</b></span> seconds
+      </div>
+      <div class="mistake">Mistakes: <span>0</span></div>
+      <div class="wpm">WPM: <span>0</span></div>
+      <div class="cpm">CPM: <span>0</span></div>
+      <button class="start-btn">Start</button>
+      <button class="try-again">Try Again</button>
+      <div class="results"></div>
+    </div>
+    <div id="past-records">
+      <table id="records-table">
+        <thead>
+          <tr>
+            <th>Time (s)</th>
+            <th>WPM</th>
+            <th>CPM</th>
+            <th>Mistakes</th>
+          </tr>
+        </thead>
+        <tbody id="records-body"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
